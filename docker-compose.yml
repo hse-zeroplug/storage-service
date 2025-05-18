@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: storage-mongo
+    volumes:
+      - storage_mongo_data:/data/db
+    ports:
+      - "27072:27017"
+    environment:
+      MONGO_INITDB_DATABASE: storage
+
+volumes:
+  storage_mongo_data:

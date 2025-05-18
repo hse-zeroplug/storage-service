@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: storage-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27072
+      database: storage
+
+server:
+  port: 8091
+
+internal:
+  dir: ./storage
