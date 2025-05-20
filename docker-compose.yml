@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mongo:
     image: mongo:latest
-    container_name: storage-mongo
+    container_name: zero-plug-storage-mongo
     volumes:
       - storage_mongo_data:/data/db
     ports:
